@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		75425E0B28E9AE14002E47ED /* SwiftUI_TestAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75425E0A28E9AE14002E47ED /* SwiftUI_TestAppApp.swift */; };
-		75425E0D28E9AE14002E47ED /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75425E0C28E9AE14002E47ED /* AuthenticationView.swift */; };
+		75425E0D28E9AE14002E47ED /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75425E0C28E9AE14002E47ED /* LoginView.swift */; };
 		75425E0F28E9AE16002E47ED /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75425E0E28E9AE16002E47ED /* Assets.xcassets */; };
 		75425E1228E9AE16002E47ED /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 75425E1128E9AE16002E47ED /* Preview Assets.xcassets */; };
 		75425E1928E9D37B002E47ED /* RoundedCorner+View.swift in Sources */ = {isa = PBXBuildFile; fileRef = 75425E1828E9D37B002E47ED /* RoundedCorner+View.swift */; };
@@ -17,7 +17,7 @@
 /* Begin PBXFileReference section */
 		75425E0728E9AE14002E47ED /* SwiftUI_TestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwiftUI_TestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		75425E0A28E9AE14002E47ED /* SwiftUI_TestAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftUI_TestAppApp.swift; sourceTree = "<group>"; };
-		75425E0C28E9AE14002E47ED /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
+		75425E0C28E9AE14002E47ED /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
 		75425E0E28E9AE16002E47ED /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		75425E1128E9AE16002E47ED /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		75425E1828E9D37B002E47ED /* RoundedCorner+View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "RoundedCorner+View.swift"; sourceTree = "<group>"; };
@@ -54,10 +54,10 @@
 			isa = PBXGroup;
 			children = (
 				75425E0A28E9AE14002E47ED /* SwiftUI_TestAppApp.swift */,
-				75425E0C28E9AE14002E47ED /* AuthenticationView.swift */,
+				75425E1B28E9E092002E47ED /* PresentationLayer */,
+				75425E1A28E9E07F002E47ED /* Helpers */,
 				75425E0E28E9AE16002E47ED /* Assets.xcassets */,
 				75425E1028E9AE16002E47ED /* Preview Content */,
-				75425E1828E9D37B002E47ED /* RoundedCorner+View.swift */,
 			);
 			path = SwiftUI_TestApp;
 			sourceTree = "<group>";
@@ -68,6 +68,38 @@
 				75425E1128E9AE16002E47ED /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		75425E1A28E9E07F002E47ED /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				75425E1828E9D37B002E47ED /* RoundedCorner+View.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		75425E1B28E9E092002E47ED /* PresentationLayer */ = {
+			isa = PBXGroup;
+			children = (
+				75425E1C28E9E09D002E47ED /* Authentication */,
+			);
+			path = PresentationLayer;
+			sourceTree = "<group>";
+		};
+		75425E1C28E9E09D002E47ED /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				75425E1E28E9E117002E47ED /* Login */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		75425E1E28E9E117002E47ED /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				75425E0C28E9AE14002E47ED /* LoginView.swift */,
+			);
+			path = Login;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -140,7 +172,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				75425E0D28E9AE14002E47ED /* AuthenticationView.swift in Sources */,
+				75425E0D28E9AE14002E47ED /* LoginView.swift in Sources */,
 				75425E0B28E9AE14002E47ED /* SwiftUI_TestAppApp.swift in Sources */,
 				75425E1928E9D37B002E47ED /* RoundedCorner+View.swift in Sources */,
 			);
