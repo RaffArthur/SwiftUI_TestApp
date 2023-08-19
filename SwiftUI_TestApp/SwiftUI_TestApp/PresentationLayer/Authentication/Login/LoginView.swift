@@ -59,7 +59,6 @@ struct LoginView: View {
                                   design: .default))
                     .background(Color(uiColor: UIColor.systemGray6))
                     .cornerRadius(16, corners: [.bottomLeft, .bottomRight])
-                    .padding(.bottom, 16)
                 }
                 
                 Button("Login") { showUserLoginAlert = true }
@@ -74,7 +73,7 @@ struct LoginView: View {
                 
                     .alert("You're wellcum! 🥳", isPresented: $showUserLoginAlert) {
                         Button("MMM! Noice!", role: .cancel) { }
-                    }
+                    } .padding(.top, 16)
             }
         }
         .padding([.leading, .trailing, .top, .bottom])
